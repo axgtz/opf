@@ -1,5 +1,5 @@
-from opf.dataset import CaseDataModule
-from opf.modules import OPFLogBarrier, GNN
+from src.opf.dataset import CaseDataModule
+from src.opf.modules import OPFLogBarrier, SimpleGNN
 import torch
 import numpy as np
 from itertools import islice
@@ -34,7 +34,7 @@ class Modules:
             pin_memory=False,
         )
 
-        gnn = GNN(
+        gnn = SimpleGNN(
             dm.gso(),
             [2] + [param["F"]] * param["gnn_layers"],
             [param["K"]] * param["gnn_layers"],

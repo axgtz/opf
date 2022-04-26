@@ -6,8 +6,8 @@ from multiprocessing import Pool
 import numpy as np
 from opf import power
 
-from opf.power import NetWrapper, LoadGenerator
-from opf.power import load_case
+from src.opf.power import NetWrapper, LoadGenerator
+from src.opf.power import load_case
 
 
 def generate_samples(manager: NetWrapper, num_samples, load_scale=1.0, delta=0.1):

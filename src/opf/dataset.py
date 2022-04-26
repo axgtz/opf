@@ -6,7 +6,7 @@ import pytorch_lightning as pl
 import torch
 from torch.utils.data import TensorDataset, random_split, DataLoader
 
-from opf.power import NetWrapper, load_case
+from src.opf.power import NetWrapper, load_case
 from multiprocessing import cpu_count
 
 class CaseDataModule(pl.LightningDataModule):

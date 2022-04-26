@@ -7,10 +7,10 @@ import torch
 import torch.nn
 from alegnn.modules import architectures
 
-import opf.powerflow as pf
-from opf.power import NetWrapper
-from opf.constraints import equality, inequality
-from opf import readout
+import src.opf.powerflow as pf
+from src.opf.power import NetWrapper
+from src.opf.constraints import equality, inequality
+from src.opf import readout
 import argparse
 import typing
 

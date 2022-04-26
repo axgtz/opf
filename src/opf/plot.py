@@ -2,7 +2,7 @@ from typing import Dict
 from matplotlib import pyplot as plt
 import numpy as np
 import torch
-import opf.powerflow as pf
+import src.opf.powerflow as pf
 
 
 def plot_equality(title, target, value):

@@ -1,8 +1,8 @@
 import numpy as np
 import scipy.sparse
 from matplotlib import pyplot as plt
-from opf.modules import SimpleGNN, OPFLogBarrier
-from opf.dataset import CaseDataModule
+from src.opf.modules import SimpleGNN, OPFLogBarrier
+from src.opf.dataset import CaseDataModule
 import torch.nn
 
 
