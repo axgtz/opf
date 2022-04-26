@@ -1,0 +1,5 @@
+/dist/
+/build/
+/alegnn.egg-info/
+**/__pycache__/
+poetry.lock
