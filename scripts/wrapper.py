@@ -9,8 +9,8 @@ import torch
 
 from GNN.Modules.architectures import SelectionGNN
 from GNN.Utils import graphTools
-from opf import OPFData
-from opf.modules import LocalGNN
+from src.opf import OPFData
+from src.opf.modules import LocalGNN
 
 os.chdir("..")
 

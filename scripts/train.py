@@ -10,9 +10,9 @@ from pytorch_lightning.loggers import WandbLogger, TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, model_checkpoint
 from pytorch_lightning import Trainer
 
-from opf.dataset import CaseDataModule
-from opf.utils import create_model
-from opf.modules import SimpleGNN, OPFLogBarrier
+from src.opf.dataset import CaseDataModule
+from src.opf.utils import create_model
+from src.opf.modules import SimpleGNN, OPFLogBarrier
 
 
 def train(params):

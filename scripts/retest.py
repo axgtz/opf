@@ -1,6 +1,6 @@
 import pytorch_lightning as pl
 import torch
-from opf.utils import model_from_parameters
+from src.opf.utils import model_from_parameters
 from glob import glob
 import wandb
 import os
