@@ -4,10 +4,10 @@ from functools import partial
 from multiprocessing import Pool
 
 import numpy as np
-from opf import power
+import power
 
-from src.opf.power import NetWrapper, LoadGenerator
-from src.opf.power import load_case
+from power import NetWrapper, LoadGenerator
+from power import load_case
 
 
 def generate_samples(manager: NetWrapper, num_samples, load_scale=1.0, delta=0.1):

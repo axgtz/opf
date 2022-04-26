@@ -11,7 +11,7 @@ from GNN.Modules.architectures import SelectionGNN
 from GNN.Utils import graphTools
 from src.opf import OPFData
 from src.opf.modules import LocalGNN
-
+print("tacp")
 os.chdir("..")
 
 case_name = "case30"

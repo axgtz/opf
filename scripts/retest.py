@@ -7,8 +7,8 @@ import os
 from tqdm import tqdm
 
 api = wandb.Api()
-# runs = api.runs("damowerko/opf", filters={"tag": "foo"})
-runs = [api.run(f"damowerko/opf/{id}") for id in ["2zdzkf7r", "2ng1ftuc", "2lllzf30", "h3lsl9hr"]]
+runs = api.runs("guti/DamOwerkoOPFGNN", filters={"tag": "foo"})
+# runs = [api.run(f"damowerko/opf/{id}") for id in ["2zdzkf7r", "2ng1ftuc", "2lllzf30", "h3lsl9hr"]]
 print(runs)
 
 for run in tqdm(runs):

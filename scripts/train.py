@@ -39,7 +39,7 @@ def train(params):
     if params["log"]:
         if params["wandb"]:
             wandb_logger = WandbLogger(
-                project="opf",
+                project="DamOwerkoOPFGNN",
                 id=run_id,
                 save_dir=params["log_dir"],
                 config=params,

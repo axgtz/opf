@@ -1,7 +1,7 @@
 import wandb
 import wandb.apis.public
-from opf.modules import OPFLogBarrier
-from opf.utils import create_model
+from src.opf.modules import OPFLogBarrier
+from src.opf.utils import create_model
 import torch
 import glob
 import pytorch_lightning as pl
@@ -27,7 +27,7 @@ class CacheOutputs(pl.callbacks.Callback):
 
 def load_model(dm, id: str):
     api = wandb.Api()
-    run: wandb.apis.public.Run = api.run(f"damowerko/opf/{id}")
+    run: wandb.apis.public.Run = api.run(f"guti/DamOwerkoOPFGNN/{id}")
 
     # get the weights
     checkpoint_artifacts = list(
